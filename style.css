@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1;
+    /* ורוד בהיר */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('assets/images/image_converted.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    direction: rtl;
+}
+
+header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #F8A3A3;
+    /* Updated color */
+    margin-bottom: 25px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    color: #F8A3A3;
+    /* Updated color */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s ease-in-out, transform 0.3s;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.nav a:hover {
+    color: white;
+    background-color: #F8A3A3;
+    transform: scale(1.1);
+}
+
+.login-box,
+.signup-box {
+    display: none;
+}
+
+.login-box.active,
+.signup-box.active {
+    display: block;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: right;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form-box input:focus {
+    outline: none;
+    border-color: #F8A3A3;
+    box-shadow: 0 0 10px #F8A3A3;
+    transform: scale(1.02);
+}
+
+.form-box button {
+    background-color: #F8A3A3;
+    /* Updated color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 14px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.form-box button:hover {
+    background-color: #E78B8B;
+    /* Slightly darker shade for hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.form-box button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #555;
+}
